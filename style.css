@@ -5,10 +5,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --color-primary: #0027d5;
+}
 body {
   font-family: "Noto Sans TC", sans-serif;
   line-height: 1.5;
   font-weight: 500;
+  background-color: #fbfbfb;
 }
 .site-header {
   padding: 24px 0;
@@ -21,7 +25,7 @@ body {
 }
 .nav-list li a {
   display: inline-block;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
   color: #000;
   text-decoration: none;
@@ -42,9 +46,51 @@ body {
 .nav-list li a:hover::after {
   transform: scaleX(1);
 }
+.hero {
+  position: relative;
+}
 .hero-imgs {
   display: flex;
 }
 .hero-imgs img {
   width: 50%;
+}
+.hero-title {
+  color: var(--color-primary);
+  position: absolute;
+  top: clamp(150px, 20vw, 300px);
+  right: clamp(40px, 10vw, 193px);
+}
+.hero-title h1 {
+  font-size: clamp(2.5rem, 8vw, 7.5rem);
+  font-weight: bold;
+}
+.hero-title p {
+  font-size: clamp(1rem, 2.5vw, 1.75rem);
+}
+.hero-intro {
+  padding: 80px 40px;
+  max-width: 1077px;
+  background-color: #fff;
+  margin-top: clamp(-16px, 4vw, -40px);
+}
+.hero-intro p {
+  font-size: clamp(1rem, 2.5vw, 1.75rem);
+  font-weight: normal;
+}
+.hero-intro p + p {
+  margin-top: 16px;
+}
+.hero-intro .icons {
+  display: flex;
+  list-style: none;
+  gap: 4px;
+  margin-top: 16px;
+}
+.icons a:hover img {
+  transform: scale(1.1);
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 767px) {
 }
