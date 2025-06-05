@@ -47,48 +47,50 @@ body {
   transform: scaleX(1);
 }
 .hero {
+  display: flex;
   position: relative;
 }
-.hero-imgs {
-  display: flex;
-}
-.hero-imgs img {
+.hero-left,
+.hero-right {
+  background-size: cover;
+  background-position: center;
   width: 50%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.hero-left {
+  background-image: url("https://github.com/min-000-0/final-project/blob/main/img/desktop/index/hero/Hero%20Section.png?raw=true");
+}
+.hero-right {
+  background-image: url("https://github.com/min-000-0/final-project/blob/main/img/desktop/index/hero/Hero%20Section2.png?raw=true");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: clamp(24px, 6vw, 80px);
 }
 .hero-title {
   color: var(--color-primary);
-  position: absolute;
-  top: clamp(150px, 20vw, 300px);
-  right: clamp(40px, 10vw, 193px);
 }
 .hero-title h1 {
-  font-size: clamp(2.5rem, 8vw, 7.5rem);
-  font-weight: bold;
+  font-size: clamp(1.5rem, 7vw, 7.5rem);
+  white-space: nowrap;
 }
 .hero-title p {
   font-size: clamp(1rem, 2.5vw, 1.75rem);
 }
 .hero-intro {
-  padding: 80px 40px;
-  max-width: 1077px;
-  background-color: #fff;
-  margin-top: clamp(-16px, 4vw, -40px);
-}
-.hero-intro p {
   font-size: clamp(1rem, 2.5vw, 1.75rem);
   font-weight: normal;
-}
-.hero-intro p + p {
-  margin-top: 16px;
+  position: absolute;
+  bottom: clamp(-20%, 8vw, -10%); /* 根據螢幕自動微調 */
+  right: clamp(16px, 8vw, 80px);
+  background: white;
+  padding: 24px;
+  max-width: 60%;
 }
 .hero-intro .icons {
-  display: flex;
   list-style: none;
-  gap: 4px;
-  margin-top: 16px;
-}
-.icons a:hover img {
-  transform: scale(1.1);
+  display: flex;
 }
 @media (max-width: 1024px) {
 }
