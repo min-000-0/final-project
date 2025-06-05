@@ -10,16 +10,16 @@ body {
   line-height: 1.5;
   font-weight: 500;
 }
-header {
+.site-header {
   padding: 24px 0;
 }
-.menu {
+.nav-list {
   display: flex;
   list-style: none;
   justify-content: center;
   gap: 40px;
 }
-.menu li a {
+.nav-list li a {
   display: inline-block;
   font-size: 28px;
   font-weight: bold;
@@ -27,7 +27,7 @@ header {
   text-decoration: none;
   position: relative;
 }
-.menu li a::after {
+.nav-list li a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -39,6 +39,12 @@ header {
   transform-origin: center;
   transition: transform 0.3s ease;
 }
-.menu li a:hover::after {
+.nav-list li a:hover::after {
   transform: scaleX(1);
+}
+.hero-imgs {
+  display: flex;
+}
+.hero-imgs img {
+  width: 50%;
 }
