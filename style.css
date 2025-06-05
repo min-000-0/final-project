@@ -82,13 +82,17 @@ body {
   font-size: clamp(1rem, 2.5vw, 1.75rem);
   font-weight: normal;
   position: absolute;
-  bottom: clamp(-20%, 8vw, -10%); /* 根據螢幕自動微調 */
+  top: clamp(80%, 8vw, 90%);
   right: clamp(16px, 8vw, 80px);
   background: white;
-  padding: 24px;
+  padding: clamp(16px, 4vw, 32px);
   max-width: 60%;
 }
+.hero-intro p + p {
+  margin-top: 16px;
+}
 .hero-intro .icons {
+  margin-top: 16px;
   list-style: none;
   display: flex;
 }
