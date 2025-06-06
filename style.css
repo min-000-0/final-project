@@ -139,8 +139,9 @@ body {
   max-width: 1296px;
 }
 .contact-section h2 {
-  font-size: clamp(1.5rem, 7vw, 4rem);
+  font-size: clamp(3rem, 7vw, 4rem);
   font-weight: bold;
+  margin-bottom: 24px;
 }
 .contact-list {
   list-style: none;
@@ -154,7 +155,7 @@ body {
 }
 .contact-item:first-child span:first-of-type {
   text-decoration: underline;
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-size: clamp(1.75rem, 2.5vw, 2rem);
   width: auto;
 }
 .contact-item a::after {
@@ -169,7 +170,7 @@ body {
   text-decoration: none;
   padding: 16px 0;
   color: #000;
-  font-size: clamp(1rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.5rem, 2.5vw, 1.75rem);
   flex-wrap: nowrap;
 }
 .contact-item a:hover {
