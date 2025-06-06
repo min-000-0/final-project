@@ -7,6 +7,7 @@
 }
 :root {
   --color-primary: #0027d5;
+  --color-gray: #4b4b4b;
 }
 body {
   font-family: "Noto Sans TC", sans-serif;
@@ -49,6 +50,7 @@ body {
 .hero {
   display: flex;
   position: relative;
+  margin-bottom: 300px;
 }
 .hero-left,
 .hero-right {
@@ -100,6 +102,11 @@ body {
 .icons a:hover img {
   transform: scale(1.1);
 }
+@media (max-width: 1024px) {
+  .hero-intro {
+    padding: clamp(32px, 8vw, 40px) clamp(24px, 5vw, 36px);
+  }
+}
 @media (max-width: 767px) {
   .hero {
     flex-direction: column;
@@ -132,7 +139,58 @@ body {
     padding: 24px;
   }
 }
-
+.services {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.services h2 {
+  font-size: clamp(3rem, 7vw, 4rem);
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+.services-item {
+  display: flex;
+  align-items: center;
+}
+.services-item:nth-child(2),
+.services-item:nth-child(4) {
+  flex-direction: row-reverse;
+}
+.services-item img {
+  width: 100%;
+  height: auto;
+}
+.services-item .content {
+  background-color: #fff;
+  padding: 24px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: -40px;
+}
+.services-item .content h3 {
+  font-size: clamp(1rem, 2.5vw, 1.75rem);
+}
+.services-item .content p {
+  font-weight: normal;
+  color: var(--color-gray);
+}
+.services-item .content::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2.5px;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+}
 .contact-section {
   margin: 32px auto;
   padding: 24px;
@@ -196,7 +254,4 @@ body {
     margin-top: 4px;
     margin-left: 0;
   }
-}
-.main {
-  height: 1200px;
 }
