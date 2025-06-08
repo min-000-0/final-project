@@ -21,10 +21,13 @@ h2 {
   text-decoration: none;
   color: #4b4b4b;
   font-weight: normal;
-  display: block;
+  display: inline-block;
   padding: 8px 16px;
   border: 1px solid #000;
   border-radius: 80px;
+}
+.btn:hover {
+  background-color: #eee;
 }
 .dash {
   width: 40px;
@@ -341,6 +344,7 @@ body {
 }
 .career-content {
   display: flex;
+  align-items: flex-end;
   gap: 24px;
 }
 .career-left {
@@ -356,14 +360,65 @@ body {
 .career-right {
   width: 40%;
 }
-.career-intro2 {
-  padding: 40px 80px;
-  background-color: #f5f5f5;
-  width: fit-content;
+.career-right span {
+  color: var(--color-primary);
+}
+.career-intro1 {
+  padding: 80px 40px;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 526px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 24px;
+  margin-left: -219px;
+  margin-top: -29px;
+  margin-bottom: -29px;
+}
+.career-intro2 {
+  padding: 80px 40px;
+  background-color: #f5f5f5;
+  max-width: 526px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 29px;
+}
+.career-intro2 .btn {
+  width: fit-content;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+@media (max-width: 767px) {
+  .career-content {
+    flex-direction: column;
+  }
+  .career-left,
+  .career-right,
+  .career-intro1,
+  .career-intro2 {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 375px) {
+}
+.newsletter {
+  display: flex;
+}
+.newsletter-left {
+  width: 100%;
+  height: auto;
+  background-image: url("https://github.com/min-000-0/final-project/blob/main/img/desktop/index/photo6.png?raw=true");
+}
+.newsletter-right {
+  width: 100%;
+  height: auto;
+  padding: 24px;
+  text-align: center;
+  justify-content: flex-start;
+  background-image: url("https://github.com/min-000-0/final-project/blob/main/img/mobile/index/hero/Hero%20Section2.png?raw=true");
 }
 .contact-section {
   margin: 32px auto;
