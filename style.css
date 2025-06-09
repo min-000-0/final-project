@@ -274,6 +274,9 @@ body {
     align-items: flex-end;
     gap: 8px;
   }
+  .services-list {
+    gap: 32px;
+  }
 }
 .blog {
   max-width: 1296px;
@@ -483,6 +486,9 @@ body {
   .career-intro1,
   .career-intro2 {
     padding: 40px 24px;
+  }
+  .career-list {
+    gap: 24px;
   }
 }
 @media (max-width: 420px) {
