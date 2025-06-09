@@ -20,6 +20,26 @@ h2 {
 .swiper {
   width: 100%;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "→";
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+.swiper-button-prev::after {
+  content: "←";
+}
 .btn {
   text-decoration: none;
   color: #4b4b4b;
@@ -285,15 +305,6 @@ body {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
-/* .blog .blog-list {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-} */
-/* .blog .blog-item {
-  flex: 1 1 calc ((100% - 48px) / 3);
-} */
 .blog-item img {
   margin-bottom: 16px;
 }
