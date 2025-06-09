@@ -332,7 +332,6 @@ body {
   font-weight: normal;
   margin-bottom: 16px;
 }
-
 .read-more:hover {
   background-color: #eee;
 }
@@ -346,6 +345,7 @@ body {
   display: flex;
   align-items: flex-end;
   gap: 24px;
+  margin-bottom: 40px;
 }
 .career-left {
   width: 60%;
@@ -389,6 +389,55 @@ body {
   width: fit-content;
   border-color: var(--color-primary);
   color: var(--color-primary);
+}
+.career-list {
+  list-style: none;
+  background-color: #ededed;
+  padding: 24px;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.career-item {
+  flex: 1;
+}
+.career-item img {
+  margin-bottom: 16px;
+}
+.career-item h4 {
+  font-size: clamp(1rem, 7.5vw, 1.5rem);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.career-item .checkbox {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  position: relative;
+}
+.career-item .checkbox::after {
+  content: "✓";
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.career-item .check-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.career-item .check-item + .check-item {
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #000;
+}
+.career-item .btn {
+  margin-top: 16px;
 }
 @media (max-width: 767px) {
   .career-content {
