@@ -356,6 +356,7 @@ body {
 .career-left img {
   width: 100%;
   height: auto;
+  display: block;
 }
 .career-right {
   width: 40%;
@@ -441,11 +442,17 @@ body {
   margin-top: 16px;
 }
 @media (max-width: 1024px) {
+  .career-list {
+    gap: 40px;
+  }
   .career-item {
-    flex: 1 1 calc((100% - 24px) / 2);
+    flex: 1 1 calc((100% - 40px) / 2);
   }
 }
 @media (max-width: 767px) {
+  .career {
+    padding: 12px;
+  }
   .career-content {
     flex-direction: column;
   }
@@ -457,15 +464,25 @@ body {
     max-width: 100%;
     margin: 0;
   }
+  .career-left {
+    padding-bottom: 0;
+    height: fit-content;
+  }
+  .career-right {
+    margin-top: -50%;
+  }
   .career-item {
     flex: 1 1 100%;
   }
-}
-@media (max-width: 375px) {
+  .career-intro1,
+  .career-intro2 {
+    padding: 40px 24px;
+  }
 }
 .newsletter {
   display: flex;
-  border: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 .newsletter-left,
 .newsletter-right {
@@ -524,16 +541,15 @@ body {
   .newsletter {
     flex-direction: column;
   }
-  .newsletter-right {
-    padding: 24px;
+  .newsletter-left {
+    background-image: url("https://github.com/min-000-0/final-project/blob/main/img/mobile/index/photo6.png?raw=true");
   }
-  .newsletter-right form {
-    padding: 40px 24px;
-  }
-}
-@media (max-width: 375px) {
   .newsletter-right {
     padding: 12px;
+    aspect-ratio: unset;
+    background-image: url("https://github.com/min-000-0/final-project/blob/main/img/mobile/index/hero/Hero%20Section2.png?raw=true");
+    background-position: center;
+    background-size: cover;
   }
 }
 .contact-section {
