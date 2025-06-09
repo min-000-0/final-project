@@ -365,7 +365,7 @@ body {
 }
 .career-intro1 {
   padding: 80px 40px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: #fff;
   max-width: 526px;
   display: flex;
   flex-direction: column;
@@ -454,6 +454,7 @@ body {
   .career-intro1,
   .career-intro2 {
     width: 100%;
+    max-width: 100%;
     margin: 0;
   }
   .career-item {
