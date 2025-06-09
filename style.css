@@ -17,9 +17,6 @@ h2 {
 .br-display {
   display: none;
 }
-.swiper {
-  width: 100%;
-}
 .swiper-button-next,
 .swiper-button-prev {
   background-color: var(--color-primary);
@@ -39,6 +36,12 @@ h2 {
 }
 .swiper-button-prev::after {
   content: "←";
+}
+.swiper-button-prev {
+  left: -68px;
+}
+.swiper-button-next {
+  right: -68px;
 }
 .btn {
   text-decoration: none;
@@ -304,6 +307,7 @@ body {
   padding: 80px 24px;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  position: relative;
 }
 .blog-item img {
   margin-bottom: 16px;
