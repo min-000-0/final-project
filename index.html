@@ -551,16 +551,21 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 24,
+
         breakpoints: {
-          767: {
-            slidesPerView: 2,
-            spaceBetween: 24,
-          },
           1200: {
             slidesPerView: 3,
             spaceBetween: 24,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 16,
           },
         },
       });
