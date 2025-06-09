@@ -381,13 +381,21 @@
         <h2>職涯諮詢<br class="br-display" />成功案例</h2>
         <div class="career-content">
           <div class="career-left">
-            <img
-              src="https://github.com/min-000-0/final-project/blob/main/img/desktop/index/photo5.png?raw=true"
-              srcset="
-                https://github.com/min-000-0/final-project/blob/main/img/mobile/index/photo5.png?raw=true 767w
-              "
-              alt="photo5"
-            />
+            <picture>
+              <!-- 畫面寬度小於時套用 -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  https://github.com/min-000-0/final-project/blob/main/img/mobile/index/photo5.png?raw=true
+                "
+              />
+
+              <!-- 預設圖片 -->
+              <img
+                src="https://github.com/min-000-0/final-project/blob/main/img/desktop/index/photo5.png?raw=true"
+                alt="photo5"
+              />
+            </picture>
           </div>
           <div class="career-right">
             <div class="career-intro1">
