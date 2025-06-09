@@ -551,8 +551,18 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        slidesPerView: 3,
-        spaceBetween: 48,
+        slidesPerView: 1,
+        spaceBetween: 24,
+        breakpoints: {
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
       });
     </script>
   </body>
