@@ -396,6 +396,7 @@ body {
   padding: 24px;
   gap: 24px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .career-item {
@@ -439,6 +440,11 @@ body {
 .career-item .btn {
   margin-top: 16px;
 }
+@media (max-width: 1024px) {
+  .career-item {
+    flex: 1 1 calc((100% - 24px) / 2);
+  }
+}
 @media (max-width: 767px) {
   .career-content {
     flex-direction: column;
@@ -449,6 +455,9 @@ body {
   .career-intro2 {
     width: 100%;
     margin: 0;
+  }
+  .career-item {
+    flex: 1 1 100%;
   }
 }
 @media (max-width: 375px) {
