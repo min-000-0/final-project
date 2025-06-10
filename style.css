@@ -165,6 +165,7 @@ body {
 @media (max-width: 767px) {
   .hero {
     flex-direction: column;
+    margin-bottom: 120px;
   }
   .hero-left {
     width: 100%;
@@ -373,6 +374,7 @@ body {
 @media (max-width: 767px) {
   .blog {
     padding: 12px;
+    padding-top: 64px;
     padding-bottom: 140px;
   }
 }
@@ -513,7 +515,8 @@ body {
 }
 @media (max-width: 767px) {
   .career {
-    padding: 12px;
+    margin: 64px 0;
+    padding: 0 12px;
   }
   .career-content {
     flex-direction: column;
