@@ -14,6 +14,19 @@ h2 {
   font-weight: bold;
   margin-bottom: 32px;
 }
+.container {
+  max-width: 1344px; /* 1296px + 48px (padding) */
+  padding: 0 24px; /* 設定 padding 避免內容貼在螢幕邊緣 */
+  margin: 0 auto;
+  overflow: visible;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 1320px; /* 1296px + 24px (padding) */
+    padding: 0 12px; /* 設定 padding 避免內容貼在螢幕邊緣 */
+  }
+}
 .br-display {
   display: none;
 }
@@ -196,10 +209,7 @@ body {
   }
 }
 .services {
-  max-width: 1296px;
-  margin: 0 auto;
   margin-bottom: 80px;
-  padding: 24px;
 }
 .services-list {
   list-style: none;
@@ -288,9 +298,6 @@ body {
   }
 }
 @media (max-width: 767px) {
-  .services {
-    padding: 0 12px;
-  }
   .services span {
     flex-direction: column;
     align-items: flex-end;
@@ -301,12 +308,11 @@ body {
   }
 }
 .blog {
-  max-width: 1296px;
-  margin: 0 auto;
-  padding: 80px 24px;
+  padding: 80px 0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   position: relative;
+  overflow: visible;
 }
 .blog-item img {
   width: 100%;
@@ -349,7 +355,7 @@ body {
 .swiper-button-next {
   right: -68px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1550px) {
   .blog {
     padding-bottom: 140px;
   }
@@ -358,24 +364,29 @@ body {
     position: absolute;
     top: auto;
     left: auto;
-    bottom: 64px;
+    bottom: calc(-44px + -32px);
     display: flex;
     justify-content: center;
     align-items: center;
     transform: none;
   }
   .swiper-button-prev {
-    right: calc(12px + 44px + 24px);
+    right: calc(24px + 44px + 24px);
   }
   .swiper-button-next {
-    right: 12px;
+    right: 24px;
   }
 }
 @media (max-width: 767px) {
   .blog {
-    padding: 12px;
     padding-top: 64px;
     padding-bottom: 140px;
+  }
+  .swiper-button-prev {
+    right: calc(12px + 44px + 24px);
+  }
+  .swiper-button-next {
+    right: 12px;
   }
 }
 .description {
@@ -394,9 +405,7 @@ body {
   background-color: #eee;
 }
 .career {
-  max-width: 1296px;
-  margin: 80px auto;
-  padding: 24px;
+  margin: 80px 0;
 }
 .career-content {
   display: flex;
@@ -516,7 +525,6 @@ body {
 @media (max-width: 767px) {
   .career {
     margin: 64px 0;
-    padding: 0 12px;
   }
   .career-content {
     flex-direction: column;
